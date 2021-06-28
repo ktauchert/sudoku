@@ -1,0 +1,86 @@
+.main {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background-image: linear-gradient(to right, white, rgb(155, 241, 155));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 90%;
+  background-color: lightgray;
+  border: solid 1px grey;
+  box-shadow: 5px 5px 5px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.number-container {
+  display: flex;
+  flex-direction: row;
+}
+.select-number {
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  padding: auto;
+  text-align: center;
+  margin: 0 5px 5px 0;
+  border: solid 3px rgb(99, 170, 99);
+  background-color: rgb(255, 216, 159);
+}
+.select-number:hover {
+  cursor: pointer;
+  background-color: rgb(247, 157, 23);
+}
+.game-container {
+  background-color: white;
+  border: solid 1px black;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.game-grid__big-nine {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-color: rgb(255, 216, 159);
+  border: solid 3px rgb(99, 170, 99);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.game-grid__big-nine__small-nine {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  background-color: rgb(255, 216, 159);
+  border: solid 1px rgb(99, 170, 99);
+}
+.game-grid__big-nine__small-nine:hover {
+  cursor: pointer;
+  background-color: rgb(247, 157, 23);
+}
+@media screen and (max-width: 539px) {
+  .game-container {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .game-container {
+    width: 440px;
+    height: 440px;
+  }
+}
+@media screen and (min-width: 741px) {
+  .game-container {
+    width: 600px;
+    height: 600px;
+  }
+}
